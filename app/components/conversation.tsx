@@ -16,7 +16,7 @@ export function Conversation() {
   const [isRetrying, setIsRetrying] = useState(false);
   const [inputLevel, setInputLevel] = useState(0); // 0..1
   const [history, setHistory] = useState<HistoryItem[]>([]);
-  const telemetryRef = useRef<TelemetryRecorder>(new TelemetryRecorder({ agentId: 'agent_5601k2frztsqeaht9m2tqzc2d08w' }));
+  const telemetryRef = useRef<TelemetryRecorder>(new TelemetryRecorder({ agentId: 'agent_9601k44ztb46fybvj9crht9xh1t1' }));
 
   const audioContextRef = useRef<AudioContext | null>(null);
   const analyserRef = useRef<AnalyserNode | null>(null);
@@ -176,7 +176,7 @@ export function Conversation() {
       micStreamRef.current = stream;
       startMicVisualizer(stream);
       const result = await conversation.startSession({
-        agentId: 'agent_5601k2frztsqeaht9m2tqzc2d08w',
+        agentId: 'agent_9601k44ztb46fybvj9crht9xh1t1',
         connectionType: 'webrtc',
         userId: telemetryRef.current.getSummary().sessionId,
       });

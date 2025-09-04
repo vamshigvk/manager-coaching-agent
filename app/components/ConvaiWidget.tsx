@@ -10,7 +10,7 @@ export default function ConvaiWidget() {
     const existing = containerRef.current.querySelector('elevenlabs-convai');
     if (!existing) {
       const el = document.createElement('elevenlabs-convai');
-      el.setAttribute('agent-id', 'agent_5601k2frztsqeaht9m2tqzc2d08w');
+      el.setAttribute('agent-id', 'agent_9601k44ztb46fybvj9crht9xh1t1');
       containerRef.current.appendChild(el);
     }
 
